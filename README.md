@@ -14,6 +14,7 @@ CET by nature is a service oriented company which believes in “Service unto Sa
 
 ## Contact
 
-* Website: http://www.shreyasg.com
+* Website: http://www.chemenvirotech.com/
 * Email: info@chemenvirotech.com
 * Feel free to contact us for any information or suggestion [here](mailto:info@chemenvirotech.com)
+* Website contributors: Rohit Bobade & Shreyas Gaonkar
