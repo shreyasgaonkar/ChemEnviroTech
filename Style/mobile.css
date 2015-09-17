@@ -1,0 +1,35 @@
+/*MEDIA QUERIES FOR MOBILES AND TABLETS*/
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+/*XS Devices (smaller devices, 768px and below*/
+@media (max-width: 768px) {
+  .header {
+    margin-top: 0px; }
+
+  footer ul li {
+    padding: 5px 0; } }
+@media (max-width: 487px) {
+  .header-social {
+    display: none; }
+
+  .hidden-on-small-viewport {
+    display: none; } }
+@media (min-width: 488px) {
+  .visible-on-small-viewport {
+    display: none; } }
+/*Collapsing Nav*/
+@media (max-width: 893px) {
+  .nav-left {
+    width: 100%; }
+
+  .nav-right {
+    width: 100%; } }
+@media (min-width: 894px) {
+  .nav-left {
+    width: 16.67%; }
+
+  .nav-right {
+    width: 83.33%; } }
+
+/*# sourceMappingURL=mobile.css.map */

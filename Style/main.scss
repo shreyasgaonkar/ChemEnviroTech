@@ -1,0 +1,320 @@
+﻿@import "../bourbon/bourbon";
+@import "../neat/_neat";
+@import "../base/_base";
+@import 'mobile';
+@import "footer";
+@import "testimonials";
+@import "website";
+@import "papers";
+@import "top-nav";
+
+
+/*@import "hero";
+@import 'blog';*/
+
+$color1: #253040;
+$color2: #EF3742;
+
+body, html {
+    margin: 0;
+    border: 0;
+    font-family: $helvetica;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    height: 40vh;
+    background-image: url('../images/inceneration - Copy.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-bottom:50px;
+    text-align: center;
+    
+    /*flex-direction: column;
+    //display: flex;
+    justify-content: center;*/
+    /*/*background-size: cover;
+    background-attachment: fixed; /*For Parallex*/
+    /*color: #FFF;
+    position: relative;
+    overflow: hidden;*/
+
+}
+.nav-links{
+    margin:25px 0 0 0;
+}
+.navigation {
+    padding:10px;
+    //margin:0 auto;
+}
+.nav-left{
+    width:16.67%;
+    float:left;
+}
+.nav-right{
+    width:83.33%;
+    float:left;
+}
+.navigation a {
+    color: #000;
+    opacity: 0.5;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+//    float: right;
+    padding: 10px 20px 0 10px;
+    font-family: $verdana;  
+}
+
+.navigation a:hover {
+    text-decoration:none;
+    color:inherit;
+    opacity:1;
+}
+
+.header-content {
+    padding:20px 0 0 0;
+    
+}
+
+.content {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.color1 {
+    background: $color1;
+    color: white;
+}
+
+.white {
+    padding: 75px 0;
+    color: black;
+    text-align: center;
+    @include background(white);
+}
+
+
+.learn-more a {
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid $color1;
+    color: $color1;
+    margin-top: 1.5em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.learn-more a:visited, .learn-more a:active, .learn-more a:checked, .learn-more a:focus {
+    text-decoration: none;
+}
+
+.learn-more a:hover {
+    text-decoration: none;
+    color: $color2;
+    border: 1px solid $color2;
+}
+
+.line-behind-text {
+    text-align: center;
+    font-size: 24px;
+}
+
+.line-behind-text h6 {
+    background: #fff;
+    color: #808080;
+    display: inline-block;
+    font-family: "Oswald", sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0 10px;
+    position: relative;
+    text-transform: uppercase;
+    top: 34px;
+    margin-bottom: -1.5em;
+}
+
+.email {
+    font-size: 12px;
+    color: gray;
+    padding: 0 10px;
+}
+
+.contact {
+    padding: 40px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0px auto 50px auto;
+}
+
+form input {
+    margin-bottom: 20px;
+    display: block;
+}
+
+form textarea {
+    margin-bottom: 10px;
+    display: block;
+}
+
+form input[type="submit"] {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: inherit;
+    border: 1px solid $color1;
+    color: $color1;
+    margin-top: 1.5em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-size: 16px;
+    /* background:$color1;
+    color:white;
+    font-size:18px;
+    text-transform:uppercase;*/
+}
+
+form input[type="submit"]:hover {
+    /**/ text-decoration: none;
+    color: $color2;
+    border: 1px solid $color2;
+    background-color: inherit;
+    //background:$color2;
+}
+
+form input[type="submit"]:visited, form input[type="submit"]:active, form input[type="submit"]:checked, form input[type="submit"]:focus {
+    text-decoration: none;
+    background: inherit;
+    color: $color1;
+    border: 1px solid $color1;
+}
+
+/*Loading Effect */
+.loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -43px 0px 0px -43px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/loading.gif') no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page-content {
+    position: relative;
+    z-index: 1;
+    @include transition(all 0.5s ease-in-out);
+}
+
+.sidebar {
+    @include position(fixed,0px 0 0px -190px);
+    width: 180px;
+    padding: 30px;
+    background: #333;
+    z-index: 2;
+    @include transition(all 0.5s ease-in-out);
+}
+
+.sidebar li {
+    color: rgba(255,255,255,0.8);
+    font-family: 'Helvetica LT Std';
+    font-size: 16px;
+    margin-bottom: 16px;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    color: rgba(255,255,255,1);
+}
+
+.toggle {
+    @include position(fixed, 20px 0 0 1vh);
+    z-index: 2;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    float: left;
+    @include transition(all 0.5s ease-in-out);
+}
+
+#sidebartoggler {
+    display: none;
+}
+
+#sidebartoggler {
+
+    &:checked + .page-wrap {
+        .sidebar {
+            left: 0px {
+            }
+        }
+
+        .toggle {
+            left: 200px {
+            }
+        }
+
+        .pagecontent {
+            padding-left: 180px {
+            }
+        }
+    }
+}

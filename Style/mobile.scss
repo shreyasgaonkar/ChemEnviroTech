@@ -1,0 +1,58 @@
+﻿/*MEDIA QUERIES FOR MOBILES AND TABLETS*/
+
+/* Small devices (tablets, 768px and up) */
+//@media (min-width: @screen-sm-min) { }
+
+/* Medium devices (desktops, 992px and up) */
+//@media (min-width: @screen-md-min) {}
+
+/* Large devices (large desktops, 1200px and up) */
+//@media (min-width: @screen-lg-min) {}
+
+/*XS Devices (smaller devices, 768px and below*/
+@media (max-width: 768px) {
+    .header {
+        //padding: 50px 50px 50px 50px; This isn't working, hence the margin
+        margin-top: 0px;
+    }
+
+    footer ul li {
+        padding: 5px 0;
+    }
+}
+
+@media (max-width: 487px) {
+    .header-social {
+        display: none; //Social Icons are not displayed due to the space constraints.
+    }
+
+    .hidden-on-small-viewport {
+        display: none;
+    }
+}
+
+@media (min-width: 488px) {
+
+    .visible-on-small-viewport {
+        display: none;
+    }
+}
+/*Collapsing Nav*/
+@media (max-width: 893px) {
+    .nav-left {
+        width: 100%;
+    }
+
+    .nav-right {
+        width: 100%;
+    }
+}
+@media (min-width: 894px) {
+    .nav-left {
+        width: 16.67%;
+    }
+
+    .nav-right {
+        width: 83.33%;
+    }
+}
